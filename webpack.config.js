@@ -1,5 +1,6 @@
 const path = require('path'); //for being able to use absolute path for specifying output
 const postCSSPlugins = [
+    require('postcss-import'),
     require('postcss-simple-vars'),
     require('postcss-nested'),
     require('autoprefixer')
@@ -18,7 +19,6 @@ module.exports = {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
         hot: true,
-        host: '0.0.0.0',
         port: 3000,
         open: true
     },
@@ -28,7 +28,7 @@ module.exports = {
                 test: /\.css$/i,
                 use: [
                     'style-loader',
-                    'css-loader',
+                    'css-loader?url=false',
                     {
                         loader: 'postcss-loader',
                         options: { postcssOptions: { plugins: postCSSPlugins } }

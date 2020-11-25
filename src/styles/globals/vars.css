@@ -1,4 +1,2 @@
-body p {
-    color: black;
-    font-size: 16pt;
-}
+$main-color: blue;
+$main-font: 'Nunito Sans', Calibri, Arial sans-serif;
