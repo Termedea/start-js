@@ -1,0 +1,33 @@
+{
+    "name": "start-js",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack serve --mode development",
+        "build": "webpack serve --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Termedea/start-js.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Termedea/start-js/issues"
+    },
+    "homepage": "https://github.com/Termedea/start-js#readme",
+    "dependencies": {
+        "autoprefixer": "^10.0.2",
+        "css-loader": "^5.0.1",
+        "postcss-loader": "^4.1.0",
+        "postcss-nested": "^5.0.1",
+        "postcss-simple-vars": "^6.0.1",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.6.0",
+        "webpack-cli": "^4.2.0",
+        "webpack-dev-server": "^3.11.0"
+    }
+}

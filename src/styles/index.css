@@ -1,0 +1,8 @@
+@import './globals/vars.css';
+$main-color: #2f5572;
+body {
+    background: $main-color;
+
+    font-size: 30px;
+    color: white;
+}
