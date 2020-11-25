@@ -1,7 +1,0 @@
-@import './globals/vars.css';
-
-body {
-    font-size: 30px;
-    color: black;
-    font-family: $main-font;
-}
